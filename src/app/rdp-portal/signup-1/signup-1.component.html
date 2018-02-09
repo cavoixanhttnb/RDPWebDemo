@@ -29,7 +29,7 @@
                 <span>OR </span>
             </div>
             <div class="col-lg-4 col-md-5" style="padding:0px 25px;">
-                <form name="f" #f="ngForm" (ngSubmit)="f.form.valid && login()">
+                <form name="f" #f="ngForm">
                     <div class="form-group">
                         <input class="form-control input-lg text-left" type="text" name="username" #username="ngModel" [(ngModel)]="entity.UserName" required placeholder="NAME" minlength="3">
                         <small class="alert alert-danger" *ngIf="f.submitted && !username.valid">
